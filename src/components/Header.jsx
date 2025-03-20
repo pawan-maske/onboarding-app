@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 const Header = () => {
   return (
     <nav className="main-nav">
-      <div className="nav-brand">Onboarding-App</div>
+      <div className="nav-brand">Onboarding App</div>
       <ul className="nav-list">
         <li><Link to="/ecu">ECU Onboarding</Link></li>
         <li><Link to="/vin">VIN Onboarding</Link></li>

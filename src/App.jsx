@@ -22,6 +22,7 @@ function App() {
           <Route path="/mapping" element={<VinMapping />} />
         </Routes>
       </div>
+      <p className='custom-name'>Pawan Maske</p>
     </Router>
   );
 }

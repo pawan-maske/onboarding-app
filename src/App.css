@@ -86,7 +86,7 @@ body {
 }
 
 .main-nav {
-  background: #2c3e50;
+  background: #1270ce;
   padding: 1rem;
   display: flex;
   justify-content: space-between;
@@ -152,4 +152,21 @@ button {
 
 button:hover {
   background: #2980b9;
+}
+
+.main-content{
+  background-color: #888;
+}
+
+.custom-name{
+  color: white;
+  width: 200px;
+  background-color: pink;
+}
+
+@media screen and (min-width:500px) {
+  .custom-name{
+  background-color: lightgreen !important;
+
+}
 }
