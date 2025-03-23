@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { submitEcuData } from '../api/api.js';
+import useGetName from './CustomHook.jsx';
 
 const EcuOnboardingForm = () => {
   const [formData, setFormData] = useState({
@@ -10,6 +11,10 @@ const EcuOnboardingForm = () => {
     installationDate: ''
   });
 
+  const[name,getFullName]=useGetName({name: 'John Doe'});
+
+console.log("name",name);
+console.log("getFullName",getFullName({name:'test'}))
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
